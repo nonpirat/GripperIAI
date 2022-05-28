@@ -1,7 +1,7 @@
 import serial
 import time
 
-set_port = 'COM7' # Please check the port at Device Manager
+set_port = '/dev/ttyUSB0' # Please check the port at Device Manager
 set_baudrate = 38400
 set_timeout = 3
 
@@ -106,3 +106,6 @@ def IAI_Robot_Move(ser,message_id,axis,acceleration,speed,x_target,y_target,z_ta
     
 # IAI_Robot_Move(ser,'relative','xyz',acceleration=0.3,speed=100,x_target=50,y_target=0,z_target=0)
 # time.sleep(5)
+
+
+    
